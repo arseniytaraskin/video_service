@@ -1,0 +1,25 @@
+API
+
+AUTH:
+POST - /api/login/
+
+USER:
+GET - /api/user/
+POST - /api/user/
+GET - /api/user/{id_user}/
+PATCH - /api/user/{id_user}/ (изменение данных о пользователе)
+DELETE - /api/user/{id_user}/ (удалить существующего пользователя по id_user)
+
+VIDEO:
+GET - /api/videos/
+POST - /api/videos/
+GET - /api/videos/{video_id}/
+GET - /api/videos/{video_id}/likes/ (получить количество лайков к видео)
+PATCH - /api/videos/{video_id}/
+DELETE - /api/videos/{video_id}/
+
+COMMENTS:
+GET - /api/videos/{video_id}/comments/
+POST - /api/videos/{video_id}/comments/
+PATCH - /api/videos/{video_id}/comments/{comment_id}/
+DELETE - /api/videos/{video_id}/comments/{comment_id}/
